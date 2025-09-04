@@ -1,11 +1,16 @@
 #include<stdio.h>
-int main (){
-    int pos_num, fact=1,i;
+int main(){
+    int n,fact=1,i;
     printf("enter a positive integer: ");
-    scanf("%d",&pos_num);
-    for (i=1; i<=pos_num;i++){
-        fact = fact*i;
+    scanf("%d",&n);
+    if (n<0){
+        printf("Factorial is not defined for negative numbers.\n");
     }
-    printf("factorial of %d is %d",pos_num,fact);
-return 0;
+    else{
+        for (i=1;i<=n;i++){
+            fact = fact * i;
+        }
+        printf("Factorial of %d is %d\n",n,fact);
+    }
+    return 0;
 }
