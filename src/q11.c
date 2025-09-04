@@ -1,11 +1,14 @@
-#include<stdio.h>
-int main(){
-    int i,j,space;
-    for(i=5;i>=1;i){
-        for(space=5;space>i;space--){
+#include <stdio.h>
+
+int main() {
+    int n= 3;
+    int i,j,k;
+
+    for (i=n;i>=1;i--) {
+        for (j=1;j<=n-i;j++) {
             printf(" ");
         }
-        for (j=1;j<=((2*i)-1);j++){
+        for (k=1; k<=(2*i-1);k++) {
             printf("*");
         }
         printf("\n");
