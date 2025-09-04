@@ -1,5 +1,12 @@
-/* Write a C program that prompts the user for their age and determines if they are eligible to vote (consider the legal voting age in your country).
-Expected Output:
-If age >= 18, print Eligible to vote (case-insensitive, extra messages allowed).
-If age < 18, print Not eligible to vote (case-insensitive, extra messages allowed).
-*/
+#include<stdio.h>
+int main(){
+    int age;
+    printf("enter your age:");
+    scanf("%d",&age);
+    if (age>=18){
+        printf("You are eligible to vote\n");
+    } else{
+        printf("you are not eligible to vote\n");
+    }
+    return 0;
+}
