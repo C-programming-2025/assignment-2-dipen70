@@ -1,4 +1,3 @@
-// Write a C program that calculates the factorial of a given positive integer using a while loop
 #include<stdio.h>
 int main(){
     int n,fact=1,i;
