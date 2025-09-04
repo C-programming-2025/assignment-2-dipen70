@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    int i, sum = 0;
+    int i;
 
     for (i = 2; i <= 50; i = i + 2) {  
 

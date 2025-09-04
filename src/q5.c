@@ -1,15 +1,14 @@
+// Write a C program that calculates the factorial of a given positive integer using a while loop
 #include<stdio.h>
 int main(){
     int n,fact=1,i;
-    printf("enter a positive integer: ");
-    scanf("%d",&n);
-    if (n<0){
-        printf("Factorial is not defined for negative numbers.\n");
-    } else {
-        for (i=1;i<=n;i++){
-            fact = fact * i;
-        }
-        printf("Factorial of %d is %d\n",n,fact);
-    }   
+    printf("enter a number: ");
+    scanf("%d",&n); 
+    i=1;
+    while (i<=n){
+        fact = fact *i;
+        i++;
+    }
+    printf("Factorial of %d is %d\n",n,fact);
     return 0;
 }
